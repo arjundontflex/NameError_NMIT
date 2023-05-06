@@ -61,7 +61,7 @@ def display_summary(topic):
 
 # Create the main window
 window = tk.Tk()
-window.title("Topic Summaries")
+window.title("Today's Revision")
 window.geometry("1080x720")
 
 # Create the button to start the search
