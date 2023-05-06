@@ -1,0 +1,39 @@
+1.What is the definition of Cloud Computing?
+
+2.What are the advantages of Cloud Computing?
+
+3.What are the different deployment models of Cloud Computing?
+
+4.What is SaaS? Give an example.
+
+5.What is PaaS? Give an example.
+
+6.What is IaaS? Give an example.
+
+7.What is the difference between public, private, and hybrid cloud?
+
+8.What is virtualization, and how does it relate to Cloud Computing?
+
+9.What is a cloud service provider, and what are some examples?
+
+10.What are the security concerns in Cloud Computing, and how can they be mitigated?
+
+11.What are the key benefits of cloud computing?
+
+12.What are the main deployment models in cloud computing?
+
+13.What is the difference between public, private, and hybrid clouds?
+
+14.What is virtualization and how does it relate to cloud computing?
+
+15.What is the difference between IaaS, PaaS, and SaaS in cloud computing?
+
+16.What is autoscaling and how does it help with cloud resource management?
+
+17.What are some common security concerns in cloud computing and how can they be addressed?
+
+18.What is serverless computing and how does it differ from traditional cloud computing models?
+
+19.What are some popular cloud providers and their offerings?
+
+20.What is the role of containers in cloud computing and how do they work?

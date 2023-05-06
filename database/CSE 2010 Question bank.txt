@@ -1,0 +1,39 @@
+1.What are the primary functions of an Operating System?
+
+2.What are the main types of Operating Systems? Provide an example of each.
+
+3.What is virtual memory and how does it work?
+
+4.What is process scheduling? What are some common scheduling algorithms used by operating systems?
+
+5.What is deadlock? How does an Operating System handle deadlock situations?
+
+6.What is file system management? How do operating systems manage file systems?
+
+7.What is memory management? What techniques do Operating Systems use to manage memory?
+
+8.What is device management? How does an Operating System manage device drivers and hardware devices?
+
+9.What is the difference between a kernel and a shell? What is their respective role in an Operating System?
+
+10.What is multi-tasking? How does an Operating System manage multiple tasks at once?
+
+11.What are the advantages and disadvantages of using a graphical user interface (GUI) versus a command line interface (CLI)?
+
+12.What is networking? How does an Operating System support networking functionality?
+
+13.What are some common security threats to Operating Systems? How do Operating Systems protect against these threats?
+
+14.What is system call? Explain with the help of examples.
+
+15.Explain the difference between a process and a thread. How does an Operating System manage processes and threads?
+
+16.What is interrupt handling? How does an Operating System handle interrupts?
+
+17.Explain the difference between a monolithic kernel and a microkernel. What are the advantages and disadvantages of each?
+
+18.What are some common Operating System tools and utilities? Provide an example of each.
+
+19.What is kernel panic? How does an Operating System handle kernel panics?
+
+20.What are some common Operating System design patterns and architectures? How do they affect the performance and functionality of an Operating System?
