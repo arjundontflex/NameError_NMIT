@@ -3,7 +3,7 @@ import tkinter as tk
 import textwrap
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 def generate_summary(topic):
     # Use OpenAI's GPT-3 to generate summary for the given topic

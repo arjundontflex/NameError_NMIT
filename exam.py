@@ -4,7 +4,7 @@ from gpt_index import SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredictor,
 from langchain import OpenAI
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 # create the vector index
