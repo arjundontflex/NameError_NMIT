@@ -32,9 +32,9 @@ def search_topics1():
     # Display each topic in the window with a button to show the summary
     for topic in topics:
         topic_label = tk.Label(window, text=topic)
-        topic_label.pack(side=tk.LEFT)
+        topic_label.pack(side=tk.TOP)
         summary_button = tk.Button(window, text="Summary", command=lambda t=topic: display_summary(t))
-        summary_button.pack(side=tk.LEFT)
+        summary_button.pack(side=tk.TOP)
 
 def search_topics2():
     # Read the topics from a text file
@@ -44,9 +44,9 @@ def search_topics2():
     # Display each topic in the window with a button to show the summary
     for topic in topics:
         topic_label = tk.Label(window, text=topic)
-        topic_label.pack(side=tk.LEFT)
+        topic_label.pack(side=tk.TOP)
         summary_button = tk.Button(window, text="Summary", command=lambda t=topic: display_summary(t))
-        summary_button.pack(side=tk.LEFT)
+        summary_button.pack(side=tk.TOP)
 
 def display_summary(topic):
     # Get the summary for the topic
