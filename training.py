@@ -2,7 +2,7 @@ import os
 import openai
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Define the folder path containing the files
 folder_path = "database"
