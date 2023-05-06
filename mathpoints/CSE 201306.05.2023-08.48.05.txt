@@ -1,0 +1,7 @@
+-Evolution of cloud computing
+-Computing Platforms and Technologies
+- Cloud Computing Architecture
+-Types of Clouds
+-Virtualization Techniques
+- Cloud Infrastructure Mechanisms
+- Cloud Application development in Cloud

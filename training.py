@@ -3,7 +3,7 @@ import datetime
 import openai
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Define the folder path containing the files
 folder_path = "database"
@@ -59,7 +59,7 @@ matched_points = response.choices[0].text.strip()
 matched_points_list = matched_points.split("\n")
 
 # Define the filename for the matched points text file
-current_time = datetime.datetime.now().strftime("%d.%m.%Y-%H.%M.%S")
+current_time = datetime.datetime.now().strftime(" %d.%m.%Y-%H.%M.%S")
 filename = f"{search_string}{current_time}.txt"
 filepath = os.path.join("mathpoints", filename)
 

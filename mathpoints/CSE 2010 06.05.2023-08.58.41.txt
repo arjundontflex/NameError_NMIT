@@ -1,0 +1,45 @@
+-Operating system operations
+-Operating system services
+-User and OS interface
+-System calls
+-System programs
+-Operating system structure
+-Loaders
+-Linkers
+-Overview of OS design and implementation
+-Process concept
+-Operations on processes
+-Inter process communication
+-Introduction to threads
+-Multithreading models
+-Threading issues
+-Process scheduling
+-Scheduling algorithms
+-The critical-section problem
+-Synchronization hardware
+-Semaphores
+-Classic problems of synchronization
+-Deadlocks
+-Necessary conditions for deadlock
+-Resource allocation graph
+-Methods for handling deadlock
+-Memory management
+-Basic hardware-base and limit registers
+-Address binding
+-Logical vs physical address space
+-Memory management unit
+-Dynamic loading and linking
+-Swapping
+-Contiguous and non-contiguous memory allocation
+-Segmentation
+-Paging
+-Virtual memory
+-Demand paging
+-Page faults
+-Page replacement algorithms
+-Copy-on-write
+-Allocation of frames
+-Thrashing
+-File concept
+-Access methods
+-Directory and disk structure
