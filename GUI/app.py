@@ -25,6 +25,13 @@ welcome_label = tk.Label(root, text="Welcome", font=("Arial", 20), bg='white', f
 welcome_label.pack(pady=20)
 welcome_label.place(x=360, y=90)
 
+#Create the "Ref Link Button"
+reflink = tk.Button(root, text="*      Ref-Link     *", font=("Arial", 16), command=lambda: os.system("python link.py"), bd=0, bg="darkblue", fg="black", activebackground="#82c983", activeforeground="white", padx=20, pady=10, borderwidth=0, highlightthickness=0, relief="groove", cursor="hand2")
+reflink.place(relx=0.5, rely=0.3, anchor="center")
+# Place the buttons
+reflink.place(x=20, y=40)
+
+
 # Create the "revision" button
 revision_button = tk.Button(root, text="*     Revision     *", font=("Arial", 16), command=lambda: os.system("python revision.py"), bd=0, bg="skyblue", fg="black", activebackground="#82c983", activeforeground="white", padx=20, pady=10, borderwidth=0, highlightthickness=0, relief="groove", cursor="hand2")
 revision_button.place(relx=0.5, rely=0.3, anchor="center")
