@@ -62,13 +62,18 @@ def display_summary(topic):
 # Create the main window
 window = tk.Tk()
 window.title("Topic Summaries")
+window.geometry("1080x720")
 
 # Create the button to start the search
-search_button1 = tk.Button(window, text="CSE 2013", command=search_topics1)
+search_button1 = tk.Button(window, text="CSE 2013", command=search_topics1, height=10, width=10, bg="pink")
 search_button1.pack()
+search_button1.place(x=1,y=0)
 
-search_button2 = tk.Button(window, text="CSE 2010", command=search_topics2)
+
+search_button2 = tk.Button(window, text="CSE 2010", command=search_topics2, height=10, width=10, bg="orange")
 search_button2.pack()
+search_button2.place(x=100,y=0)
+
 
 # Create the output box for the summaries
 output_box = tk.Text(window)
