@@ -17,14 +17,14 @@ def search():
     response = requests.get(endpoint, params=params)
     response_json = json.loads(response.text)
 
-    # Clear the result label
-    result_label.config(text="")
+    # Clear the result text widget
+    result_text.delete("1.0", tk.END)
 
-    # Extract the relevant information from the response and print the results
+    # Extract the relevant information from the response and insert the results into the text widget
     for result in response_json["items"]:
-        result_label.config(text=result_label.cget("text") + result["title"] + "\n")
-        result_label.config(text=result_label.cget("text") + result["link"] + "\n")
-        result_label.config(text=result_label.cget("text") + result["displayLink"] + "\n\n")
+        result_text.insert(tk.END, result["title"] + "\n")
+        result_text.insert(tk.END, result["link"] + "\n")
+        result_text.insert(tk.END, result["displayLink"] + "\n\n")
 
 # Create the GUI
 root = tk.Tk()
@@ -40,9 +40,16 @@ search_entry.pack()
 search_button = tk.Button(root, text="Search", command=search)
 search_button.pack()
 
-# Create the result label
-result_label = tk.Label(root, text="")
-result_label.pack()
+# Create the scrollbar
+scrollbar = tk.Scrollbar(root)
+scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+# Create the result text widget
+result_text = tk.Text(root, yscrollcommand=scrollbar.set)
+result_text.pack()
+
+# Attach the scrollbar to the result text widget
+scrollbar.config(command=result_text.yview)
 
 # Run the GUI
 root.mainloop()
