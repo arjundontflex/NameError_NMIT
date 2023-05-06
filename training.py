@@ -1,4 +1,5 @@
 import os
+import datetime
 import openai
 
 # Set up OpenAI API key
@@ -8,16 +9,16 @@ openai.api_key = "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"
 folder_path = "database"
 
 # Define the string to search for
-search_string = input("Enter the course name to search for: ")
+search_string = input("Enter the string to search for: ")
 
-# Search for all files containing the search string in their name
+# search for all files containing the search string in their name
 matching_files = []
 for file_name in os.listdir(folder_path):
     if search_string in file_name:
         file_path = os.path.join(folder_path, file_name)
         matching_files.append(file_path)
 
-# Print the matching file paths
+# print the matching file paths
 if len(matching_files) == 0:
     print(f"No files found containing '{search_string}' in their name.")
 else:
@@ -27,22 +28,19 @@ else:
 
 # Define the paths to the documents to compare
 document1_path = matching_files[0]
+document2_path = matching_files[1]
 
-# Read in the contents of the documents
+# Read in the contents of the two documents
 with open(document1_path, "r") as f:
     document1 = f.read()
 
-# Initialize the prompt with the first document
-prompt = "Match common points between the following documents:\n\nDocument 1:\n" + document1
+with open(document2_path, "r") as f:
+    document2 = f.read()
 
-# Loop over the remaining documents and add them to the prompt
-for document_path in matching_files[1:]:
-    with open(document_path, "r") as f:
-        document = f.read()
-    prompt += "\n\nDocument " + str(matching_files.index(document_path)+1) + ":\n" + document
+# Define the prompt to be used with OpenAI's GPT-3
+prompt = "Match common points between the following two documents:\n\nDocument 1:\n" + document1 + "\n\nDocument 2:\n" + document2 + "\n\nMatched points:"
 
-# Add the prompt ending and parameters for the OpenAI API request
-prompt += "\n\nMatched points:"
+# Define the parameters for the OpenAI API request
 params = {
     "engine": "text-davinci-002",
     "prompt": prompt,
@@ -60,7 +58,20 @@ matched_points = response.choices[0].text.strip()
 # Split the matched points into a list
 matched_points_list = matched_points.split("\n")
 
+# Define the filename for the matched points text file
+current_time = datetime.datetime.now().strftime("%d.%m.%Y-%H.%M.%S")
+filename = f"{search_string}{current_time}.txt"
+filepath = os.path.join("mathpoints", filename)
+
+# Write the matched points to a text file
+with open(filepath, "w") as f:
+    for point in matched_points_list:
+        f.write(point + "\n")
+
 # Print out the matched points
-print("\nMatched Points:\n")
+print("Matched Points:\n")
 for point in matched_points_list:
     print(point)
+
+# Print out the filepath of the saved matched points
+print(f"\nThe matched points were saved to the file: {filepath}")
