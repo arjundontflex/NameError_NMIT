@@ -1,0 +1,14 @@
+COURSE CONTENT (SYLLABUS):
+ 
+Module1:Introduction                                                                                             [8 Hours] [Remember Level(1)]
+Overview and Introduction to OS, Operating System Operations, Operating System Services, User and OS interface, System Calls and its types, System Programs and types, Operating System Structure, loaders, linkers, Overview of OS design and implementation.
+
+Module 2:Process Management                                                                            [9 Hours] [Application Level(3)]
+Process Concept, Operations on Processes, Inter Process Communication, Introduction to threads - Multithreading Models, Threading Issues, Process Scheduling– Basic concepts, Scheduling Criteria, Scheduling Algorithms: FCFS, SJF, RR, Priority, Practice Problems on Scheduling.
+
+Module 3: Process Synchronization and Deadlocks                                           [12 Hours] [Application Level(3)]
+The Critical-Section Problem- Peterson’s Solution, Synchronization hardware, Semaphores, Classic Problems of Synchronization with Semaphore Solution- Dining Philosopher’s Problem / Readers and Writers Problems, . Introduction to Deadlocks, Necessary conditions for deadlock, Resource allocation Graph, Methods for handling deadlock: Deadlock Prevention and Implementation, Deadlock Avoidance and Implementation, Deadlock detection & Recovery from Deadlock.
+
+Module 4:Memory Management and File Systems                                            [13 Hours] [Understand Level(2)]
+Introduction to Memory Management, Basic hardware-Base and Limit Registers, Address Binding, Logical vs Physical Address Space, Memory Management Unit(MMU), Dynamic loading and linking, Swapping,  Contiguous and Non-Contiguous Memory Allocation, Segmentation, Paging - Structure of the Page Table – Virtual Memory and Demand Paging – Page Faults and Page Replacement Algorithms, Copy-on-write, Allocation of Frames – Thrashing.
+File concept, Access Methods, Directory and Disk structure 
