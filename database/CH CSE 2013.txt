@@ -1,0 +1,11 @@
+COURSE CONTENT (SYLLABUS): 
+Module 1: Introduction to Cloud services                                                                                  [10 Sessions][Knowledge]
+Evolution of cloud computing, Computing Platforms and Technologies, Cloud Computing Architecture, IaaS, PaaS, SaaS, Types of Clouds, Cloud Computing Environments.  
+
+Module 2: Virtualization Techniques	                                                    	     [10 Sessions] [Comprehension]
+Basics of Virtualization - Types of Virtualizations, Taxonomy of Virtualization Techniques, Implementation Levels of Virtualization 
+
+Module 3: Cloud QoS and Management                                                       	     [10 Sessions][Comprehension] Cloud Infrastructure Mechanisms- Logical Network Perimeter, Virtual Server, Cloud Storage Device, Cloud Usage Monitor,  Ready-Made Environment, SLAs, Specialized Cloud Mechanisms- Automated Scaling Listener, Load Balancer, SLA Monitor, Pay-Per-Use Monitor, Audit Monitor, Cloud Security Mechanisms 
+
+Module 4: Cloud Application development in Cloud 			           [10 Sessions] [Application]
+Programming Models for Cloud Computing – MapReduce, CGL Mapreduce, Cloud Haskell, Development environments for service development (Demonstration using AWS Cloud/Saturn Cloud); Dockers and Containers.
