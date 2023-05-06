@@ -5,8 +5,8 @@ import json
 endpoint = "https://www.googleapis.com/customsearch/v1"
 params = {
     "q": "cloud computing",
-    "cx": "8593dd414254a4650",
-    "key": " AIzaSyBx5U428KMYTCC1tazf60hK0J6vl761XsQ ",
+    "cx": "97841aee915c844ae",
+    "key": " AIzaSyB1NODmSr3zAAfaksOEDBxaxAOLPJIeI1o",
     "num": 10,  # Number of results to return
     "fields": "items(title,link,displayLink)"  # Only include title, link, and displayLink fields in the response
 }
