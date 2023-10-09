@@ -28,7 +28,7 @@ def search():
 
 # Create the GUI
 root = tk.Tk()
-root.title("Google Custom Search API")
+root.title("Students Search Engine")
 
 # Create the search label and entry
 search_label = tk.Label(root, text="Search:", height=5, width=50)
